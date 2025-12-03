@@ -1,0 +1,19 @@
+# Python virtual environments
+venv/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+# General pattern to ignore checkpoints in any subdirectory
+**/.ipynb_checkpoints/
+
+# Byte-compiled / optimized files
+__pycache__/
+*.pyc
+
+# IDE-specific files (optional, but often useful)
+.idea/
+.vscode/
+
+# Environment variables file (if used)
+.env
