@@ -328,3 +328,8 @@ if __name__ == "__main__":
     # Show a small preview
     print(results["data"][['CO', 'NO2', 'O3', 'AQI', 'AQI_Category', 'label', 'viterbi']].head())
 
+    results["data"].to_csv("../data/results/viterbi.csv")
+    print(results["data"]["label"].value_counts())
+    print(results["data"]["viterbi"].value_counts())
+
+
