@@ -279,7 +279,7 @@ def run_hmm_pipeline(
     if transition_matrix is None:
         transition_matrix = np.array([[0.71428, 0.285714], [0.485981, 0.514019]], dtype=float)
     if p_rain_by_cat is None:
-        p_rain_by_cat = {1: 0.40404040404040403, 2: 0.3492063492063492, 3: 0.0, 4: 0.0}
+        p_rain_by_cat = {1: 0.8, 2: 0.6, 3: 0.0, 4: 0.0}
 
     # Normalize any None -> 0.0 and ensure categories 1..6 exist (default 0)
     p_map: Dict[int, float] = {int(k): float(v) if v is not None else 0.0 for k, v in p_rain_by_cat.items()}
